@@ -1,15 +1,19 @@
-<h1> Automatic Car Number Plate Detection </h1>
+# Automatic Car Number Plate Detection
 
-<h2>Overview</h2>
-<p>This project is a Flask-based web application that allows users to upload videos, processes them using OpenCV and EasyOCR, and detects car number plates. The system highlights detected plates in the video, checks if they follow a specific regex pattern, and outputs the most common valid number plate detected.</p>
+<img src"https://drive.google.com/file/d/1ZPLxsLyCF8X7C_f_hZQjsIMeedTAX9hc/view?usp=sharing" alt="Program Image">
+## Overview
+This project is a Flask-based web application that allows users to upload videos, processes them using OpenCV and EasyOCR, and detects car number plates. The system highlights detected plates in the video, checks if they follow a specific regex pattern, and outputs the most common valid number plate detected.
 
-<h2>Features</h2>
-<ul>
-<li> <b>Upload Video:</b> Users can upload video files for processing.</li>
-<li> <b>Automatic Plate Detection:</b> The application detects number plates using contour detection and Optical Character Recognition (OCR).</li>
+## Features
+- **Upload Video**: Users can upload video files for processing.
+- **Automatic Plate Detection**: The application detects number plates using contour detection and Optical Character Recognition (OCR).
 - **Validation**: Plates are validated using a regex pattern ensuring they are 7 uppercase characters.
+                   -> The regex pattern defined in this project is **'^[A-Z0-9]{7}$'** which means the pattern of the number plate will of 7 characters uppercase including A-Z and 0-9 characters in it. you can change this accordingly.
+    ```bash
+    plate_pattern = re.compile(r'^[A-Z0-9]{7}$')
+    ```
 - **Video Output**: The processed video, with highlighted plates, is available for preview and download.
-</ul>
+
 ## Tech Stack
 - **Frontend**: HTML5, CSS3
 - **Backend**: Flask (Python)
@@ -55,13 +59,6 @@
 - **requirements.txt**: Contains the list of dependencies for the project.
 
 ## Usage
-1. Upload a video file from the homepage.
+1. Upload a video file from the homepage.(You can find a sample video from uploads folder)
 2. The system processes the video and detects any valid number plates.
 3. The processed video with the detected plate is displayed and available for download.
-
-## License
-This project is licensed under the MIT License.
-
----
-
-You can adjust this content to suit your project's specifics.
