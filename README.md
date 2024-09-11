@@ -1,6 +1,7 @@
 # Automatic Car Number Plate Detection
 
-<img src"https://drive.google.com/file/d/1ZPLxsLyCF8X7C_f_hZQjsIMeedTAX9hc/view?usp=sharing" alt="Program Image">
+![Project Screenshot](images/example.png)
+
 ## Overview
 This project is a Flask-based web application that allows users to upload videos, processes them using OpenCV and EasyOCR, and detects car number plates. The system highlights detected plates in the video, checks if they follow a specific regex pattern, and outputs the most common valid number plate detected.
 
@@ -8,7 +9,7 @@ This project is a Flask-based web application that allows users to upload videos
 - **Upload Video**: Users can upload video files for processing.
 - **Automatic Plate Detection**: The application detects number plates using contour detection and Optical Character Recognition (OCR).
 - **Validation**: Plates are validated using a regex pattern ensuring they are 7 uppercase characters.
-                   -> The regex pattern defined in this project is **'^[A-Z0-9]{7}$'** which means the pattern of the number plate will of 7 characters uppercase including A-Z and 0-9 characters in it. you can change this accordingly.
+                   <br>-> The regex pattern defined in this project is **'^[A-Z0-9]{7}$'** which means the pattern of the number plate will of 7 characters uppercase including A-Z and 0-9 characters in it. you can change this accordingly.
     ```bash
     plate_pattern = re.compile(r'^[A-Z0-9]{7}$')
     ```
