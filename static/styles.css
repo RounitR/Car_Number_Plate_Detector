@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px 10px; /* Adjusted padding for a balanced look */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+form input[type="file"],
+form input[type="submit"] {
+    width: 100%; /* Ensure full width on small screens */
+    max-width: 300px; /* Limit the width of inputs */
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ecf0f1;
+}
+
+form input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow on hover */
+    transform: translateY(-2px); /* Added subtle lift effect */
+}
+
+.output {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.output h2 {
+    font-size: 1.6rem;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+/* Styling for detected frame */
+.detected-frame {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 20px;
+    border: 3px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.detected-frame:hover {
+    border-color: #2980b9; /* Added hover effect to detected frame */
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow on hover */
+    transform: translateY(-2px); /* Added subtle lift effect */
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Added media queries for responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .detected-frame {
+        max-width: 400px; /* Make image more responsive */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        padding: 15px 0;
+    }
+}
+
+/* Smooth scrolling for better navigation experience */
+html {
+    scroll-behavior: smooth;
+}
